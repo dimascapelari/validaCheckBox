@@ -1,15 +1,29 @@
-// console.log("Olá Mundo");
-
 let btn = document.getElementsByClassName("btn");
 let opcoes = document.getElementsByClassName("opcoes");
 let check = document.getElementsByName("prefere-contato");
 
 function validar() {
-  //   console.log(check);
+  // console.log(check);
+  // if (opcoes[0].checked || opcoes[1].checked || opcoes[2].checked === true) {
+  //   console.log("deu certo");
+  // } else {
+  //   console.log("Escolha 1 opção!");
+  // }
 
-  if (opcoes[0].checked || opcoes[1].checked || opcoes[2].checked === true) {
-    console.log("deu certo");
+  let ck = Array.from(check);
+  let dados = [];
+
+  for (var list of ck) {
+    if (list.checked === true) {
+      dados.push(list.checked);
+    }
+  }
+
+  // console.log(dados);
+
+  if (dados.length === 0) {
+    alert("Escolha 1");
   } else {
-    console.log("Escolha 1 opção!");
+    alert("Deu certo");
   }
 }
