@@ -10,20 +10,21 @@ function validar() {
   //   console.log("Escolha 1 opção!");
   // }
 
-  let ck = Array.from(check);
+  // let ck = Array.from(check);
   let dados = [];
 
-  for (var list of ck) {
-    if (list.checked === true) {
-      dados.push(list.checked);
+  for (var item of check) {
+    if (item.checked === true) {
+      dados.push(item.value);
     }
   }
 
   // console.log(dados);
 
   if (dados.length === 0) {
-    alert("Escolha 1");
+    alert("Escolha pelo menos uma opção");
   } else {
-    alert("Deu certo");
+    alert(`Escolha feita com sucesso: \n ${dados} `);
+    console.log(`${dados}`);
   }
 }
