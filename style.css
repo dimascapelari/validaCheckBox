@@ -8,6 +8,21 @@ body {
   background-color: black;
 }
 .container-opcoes {
+  margin-top: 10px;
   color: #fff;
-  width: 40%;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.container-opcoes input {
+  margin: 10px;
+}
+
+.btn {
+  margin: 10px;
+  width: 100px;
+  height: 30px;
+  cursor: pointer;
 }
