@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+    <title>Validação</title>
+  </head>
+  <body>
+    <fieldset class="container-opcoes">
+      <legend>Escolha uma opção</legend>
+      <label for="email"
+        ><input
+          type="checkbox"
+          name="prefere-contato"
+          value="email"
+          class="opcoes"
+        />Email</label
+      >
+
+      <label for="telefone"
+        ><input
+          type="checkbox"
+          name="prefere-contato"
+          value="telefone"
+          class="opcoes"
+        />Telefone</label
+      >
+
+      <label for="whatsapp"
+        ><input
+          type="checkbox"
+          name="prefere-contato"
+          value="whatsapp"
+          class="opcoes"
+        />Whatsapp</label
+      >
+    </fieldset>
+    <button class="btn" onclick="validar()">Validar</button>
+  </body>
+</html>
