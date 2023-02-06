@@ -25,6 +25,6 @@ function validar() {
     alert("Escolha pelo menos uma opção");
   } else {
     alert(`Escolha feita com sucesso: \n ${dados} `);
-    console.log(`${dados}`);
+    // console.log(`${dados}`);
   }
 }
