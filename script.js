@@ -1,6 +1,7 @@
 let btn = document.getElementsByClassName("btn");
 let opcoes = document.getElementsByClassName("opcoes");
 let check = document.getElementsByName("prefere-contato");
+let msg = document.getElementsByClassName("msg");
 
 function validar() {
   // console.log(check);
