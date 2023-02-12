@@ -27,5 +27,6 @@ function validar() {
   } else {
     alert(`Escolha feita com sucesso: \n ${dados} `);
     // console.log(`${dados}`);
+    msg.innerHTML = "Formulário enviado com Sucesso!";
   }
 }
