@@ -27,7 +27,7 @@ body {
   cursor: pointer;
 }
 
-.msg {
-  color: green;
+#res {
+  color: rgb(4, 248, 4);
   text-align: center;
 }
