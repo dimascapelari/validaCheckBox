@@ -1,7 +1,6 @@
 let btn = document.getElementsByClassName("btn");
 let opcoes = document.getElementsByClassName("opcoes");
 let check = document.getElementsByName("prefere-contato");
-let msg = document.getElementsByClassName("msg");
 
 function validar() {
   // console.log(check);
@@ -25,8 +24,14 @@ function validar() {
   if (dados.length === 0) {
     alert("Escolha pelo menos uma opção");
   } else {
-    alert(`Escolha feita com sucesso: \n ${dados} `);
+    // alert(`Escolha feita com sucesso: \n ${dados} `);
     // console.log(`${dados}`);
-    msg.innerHTML = "Formulário enviado com Sucesso!";
+
+    imprimir();
   }
+}
+
+function imprimir() {
+  var res = document.querySelector("#res");
+  res.innerHTML = `Formulário enviado com Sucesso!`;
 }
